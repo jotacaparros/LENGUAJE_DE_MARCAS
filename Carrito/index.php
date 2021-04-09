@@ -1,21 +1,77 @@
 <?php
 $articulos = [
 	[
-		'title' => 
+		'title' => '<label class="title">Camiseta 1</label>',
+		'image' => '<img src="img/camiseta1.jpg">',
+		'description' => '<alt="descripción i1">',
+		'price' => '<label class="price">20 €</label>',
+		'stock' => '<label class="stock">Stock 10</label>',
+		'active' => True,
+
 	],
 
 	[
-		'title' => 
+		'title' => '<label class="title">Reloj 2</label>',
+		'image' => '<img src="img/reloj2.jpg">',
+		'description' => '<alt="descripción i2">',
+		'price' => '<label class="price">24 €</label>',
+		'stock' => '<label class="stock">Stock 10</label>',
+		'active' => True,
 	],
 
-	[],
+	[
+		'title' => '<label class="title">Camiseta 3</label>',
+		'image' => '<img src="img/camiseta3.jpg">',
+		'description' => '<alt="descripción i3">',
+		'price' => '<label class="price">18 €</label>',
+		'stock' => '<label class="stock">Stock 10</label>',
+		'active' => True,
+	],
 
-	[],
+	[
 
-	[],
+		'title' => '<label class="title">Reloj 4</label>',
+		'image' => '<img src="img/reloj4.jpg">',
+		'description' => '<alt="descripción i4">',
+		'price' => '<label class="price">30 €</label>',
+		'stock' => '<label class="stock">Stock 10</label>',
+		'active' => True,
+	],
+
+	[
+		'title' => '<label class="title">Reloj 5</label>',
+		'image' => '<img src="img/reloj5.jpg">',
+		'description' => '<alt="descripción i5">',
+		'price' => '<label class="price">20 €</label>',
+		'stock' => '<label class="stock">Stock 10</label>',
+		'active' => True,
+	],
 
 	
 ];
+
+for ($i = 0; $i < 5; $i++){
+
+	if ($i == 0){	
+		echo '<div id="item_container">';
+	};
+	echo '<div class="item" id="i' . $i .' ">'; // 
+	
+		if ($articulos[$i]['active'] == true){
+			echo $articulos[$i]['title'];
+			echo $articulos[$i]['image'];
+			echo $articulos[$i]['description'];
+			echo $articulos[$i]['price'];
+			echo $articulos[$i]['stock'];
+		}
+
+	echo '</div>';
+
+	if ($i == 4){
+		echo '</div>';
+	};
+
+}
 ?>
 
 
@@ -25,40 +81,9 @@ $articulos = [
 	<title>Carro de la compra con Javascript</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" title="normal" href="css/carro.css" type="text/css" media="screen" >
+	<script src= "carro.js"> </script>
 </head>
 <body>
-	<div id="item_container">
-		<div class="item" id="i1">
-			<img src="img/camiseta1.jpg" alt="descripción i1">
-			<label class="title">Camiseta 1</label>
-			<label class="price">20 €</label>
-			<label class="stock">Stock 10</label>
-		</div>
-		<div class="item" id="i2">
-			<img src="img/reloj2.jpg" alt="descripción i2">
-			<label class="title">Reloj 2</label>
-			<label class="price">24 €</label>
-			<label class="stock">Stock 10</label>
-		</div>
-		<div class="item" id="i3">
-			<img src="img/camiseta3.jpg" alt="descripción i3">
-			<label class="title">Camiseta 3</label>
-			<label class="price">18 €</label>
-			<label class="stock">Stock 10</label>
-		</div>
-		<div class="item" id="i4">
-			<img src="img/reloj4.jpg" alt="descripción i4">
-			<label class="title">Reloj 4</label>
-			<label class="price">30 €</label>
-			<label class="stock">Stock 10</label>
-		</div>
-		<div class="item" id="i5">
-			<img src="img/reloj5.jpg" alt="descripción i5">
-			<label class="title">Reloj 5</label>
-			<label class="price">28 €</label>
-			<label class="stock">Stock 10</label>
-		</div>
-	</div>
 	<div id="cart_container">
 		<div id="cart_title">
 			<span>Carrito</span>
