@@ -1,13 +1,4 @@
 /*
-
-
- Subraya (text-decoration:underline) los <label> que sean hijos directos de un elemento de la clase item.
- Pon la fuente de color rojo (color:red) a todos los botones (<button>) que estén dentro del cart_container.
- Pon la fuente de color blanco (color:white) a todos los <label> que estén adyacentes a otro <label> y estén dentro de un elemento de la clase item.
- Pon el fondo de color amarillo a todos los <div> que estén vacíos.
- Pon el fondo de color rojo al primer y último elemento de la clase item.
- Pon el borde de color verde (border-color:green) a las imágenes de camisetas.
- Pon la fuente de color verde (color:green) a todos los <input> de la página
  COMPLICADO: Pon la fuente de color verde (color:green) a todos los elementos que contengan en el texto el símbolo „€‟
 
 9.2. Ejercicio 2
@@ -101,13 +92,71 @@ let Ejercicio1 = {};
 
     }
 
+    Ejercicio1.underLineLabels = function()
+    {
+        let underLineLabel = document.querySelectorAll("div.item > label");
+        Array.from(underLineLabel).forEach(x => x.style.textDecoration = "underline");
+    }
+
+    Ejercicio1.colorButton = function()
+    {
+        let colorButtons = document.querySelectorAll("#cart_container button");
+        Array.from(colorButtons).forEach(x => x.style.color = 'red');
+    }
+
+    Ejercicio1.colorLabel = function()
+    {
+        let colorLabels = document.querySelectorAll("div.item  label");
+        Array.from(colorLabels).forEach(x => x.style.color = 'white');
+    }
+
+    Ejercicio1.colorBackgroundYellow = function()
+    {
+        let backgroundYellow = document.querySelectorAll("div :empty");
+        Array.from(backgroundYellow).forEach(x => x.style.background = 'yellow');
+    }
+
+    Ejercicio1.colorFirstItem = function()
+    {
+        let colorFirst = document.getElementsByClassName("item")[0];
+        let colorLast = document.getElementsByClassName("item");
+        colorFirst.style.background = 'red';
+        colorLast[colorLast.length - 1].style.background = 'red'
+    }
+    
+    Ejercicio1.colorFirstItem = function()
+    {
+        let colorFirst = document.getElementsByClassName("item")[0];
+        let colorLast = document.getElementsByClassName("item");
+        colorFirst.style.background = 'red';
+        colorLast[colorLast.length - 1].style.background = 'red'
+    }
+
+    Ejercicio1.colorCamisetas = function()
+    {
+        let colorCamiseta = document.querySelectorAll("img[src*=camiseta]");
+        Array.from(colorCamiseta).forEach(x => x.style.borderColor = 'green');
+       
+    }
+
+    Ejercicio1.inputColor = function()
+    {
+        let inputColors = document.getElementsByTagName("input");
+        Array.from(inputColors).forEach(x => x.style.color = 'green');
+       
+    }
+    
+    Ejercicio1.colorEuro = function()
+    {
+        let colorEuros = document.getElementsByTagName("label > price ");
+        Array.from(colorEuros).forEach(x => x.style.color = 'green');
+       
+    }
+    
+
 })(Ejercicio1);
 
-window.onload = function() {
-    Ejercicio1.itemcChangeBackgroudColor();
-    Ejercicio1.borderStyle();
-    Ejercicio1.imagesStyle();
-};
+
 
 
 let Ejercicio2 = {};
@@ -133,9 +182,20 @@ let Ejercicio2 = {};
 })(Ejercicio2);
 
 window.onload = function() {
-    Ejercicio2.duplicarCamiseta();
-}
+    Ejercicio1.itemcChangeBackgroudColor();
+    Ejercicio1.borderStyle();
+    Ejercicio1.imagesStyle();
+    Ejercicio1.underLineLabels();
+    Ejercicio1.colorButton();
+    Ejercicio1.colorLabel();
+    Ejercicio1.colorBackgroundYellow();
+    Ejercicio1.colorFirstItem();
+    Ejercicio1.colorCamisetas();
+    Ejercicio1.inputColor();
+    Ejercicio1.colorEuro();
 
+    Ejercicio2.duplicarCamiseta();
+};
 
 
 
