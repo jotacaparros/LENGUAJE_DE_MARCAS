@@ -1,16 +1,4 @@
 /*
- COMPLICADO: Pon la fuente de color verde (color:green) a todos los elementos que contengan en el texto el símbolo „€‟
-
-9.2. Ejercicio 2
-Vuelve a descomprimir el archivo carrito.zip en una nueva carpeta. En esta nueva versión del carrito sin modificar, resuelve los siguientes ejercicios:
- Al cargar la página debe aparecer el primer producto de la lista de artículos dentro del carrito, simulando que se ha comprado un artículo camiseta 1. Para ello, sigue los siguientes pasos:
-o Añade al archivo carro.js un IIFE, dentro del cual, realizarás el resto del ejercicio.
-o Utilizando las funciones del DOM, haz una copia del artículo. Como esta copia la tienes que introducir en el carrito, para evitar tener un id duplicado añádele al atributo id una “c” delante.
- Construye el id de la siguiente forma: “c” + id. No puedes usar innerHTML.
-o Oculta el elemento de la clase stock (para hacer esto, puedes añadirle el estilo display: none).
-o Cambia la propiedad css cursor del elemento y de todos sus hijos al valor default.
-o Añade al principio del artículo un enlace (lo utilizaremos para eliminar el artículo del carrito). El enlace creado debe tener este código: <a href="" class="delete"></a>
-o Añade la copia creada al principio del contenedor de artículos comprados del carrito (elemento con id cart_items).
 o Resta 1 al stock del primer artículo de la lista.
 o Resta 1 al número de artículos disponibles (stock) del primer artículo. Si después de disminuir el stock no quedan más artículos disponibles, le añadiremos al elemento de la clase stock del artículo la clase agotado. Esto hará que el stock aparezca tachado. Comprueba esta funcionalidad poniendo 1 al stock del primer artículo antes de cargar la página.
 o Incrementa en 1 el número de artículos comprados. Para acceder al valor que contiene un input, puedes utilizar la propiedad value (es de lectura/escritura).
@@ -148,9 +136,8 @@ let Ejercicio1 = {};
     
     Ejercicio1.colorEuro = function()
     {
-        let colorEuros = document.getElementsByTagName("label > price ");
-        Array.from(colorEuros).forEach(x => x.style.color = 'green');
-       
+        let colorPrice = document.querySelectorAll("label.price");
+        Array.from(colorPrice).forEach(y => y.style.color = 'green');  
     }
     
 
@@ -173,15 +160,41 @@ let Ejercicio2 = {};
         /* Aqui cambiamos el id del clon porque no puede haber 2 id iguales y lo hacemos con loa formula  d c + camiseta para que podamos usar otros id */
         camisetaCarrito.id = "c" + camiseta.id;
         /*Aquí invocamos al carrito */
-        let carrito = document.getElementById("cart_items");
-        /*El append este es para pegar enganchar al carrito el nuevo id */
-        carrito.append(camisetaCarrito);
-
-
+        let alCarrito = document.getElementById("cart_items");
+        alCarrito.insertBefore(camisetaCarrito, alCarrito.childNodes[0]);
+        
     }
+
+    Ejercicio2.ocultarStock = function ()
+    {
+    let stockOculto = document.getElementsByClassName("stock");
+    Array.from(stockOculto).forEach( x => x.style.display = "none");
+    }
+
+    Ejercicio2.crearCursor = function ()
+    // Cambia la propiedad css cursor del elemento y de todos sus hijos al valor default.
+    {
+     let crearCursor = document.getElementById("ci1");
+     crearCursor.style.cursor = "default";
+    }
+    
+    Ejercicio2.crearEnlace = function ()
+   /*Añade al principio del artículo un enlace (lo utilizaremos para eliminar el artículo del carrito). 
+   El enlace creado debe tener este código: <a href="" class="delete"></a>*/
+    {
+    let enlace = document.createElement("a");
+    enlace.href="";
+    enlace.className="delete";
+    let camisetaCarrito = document.getElementById("ci1");
+    camisetaCarrito.append(enlace);
+    }
+
+
+   
 })(Ejercicio2);
 
 window.onload = function() {
+
     Ejercicio1.itemcChangeBackgroudColor();
     Ejercicio1.borderStyle();
     Ejercicio1.imagesStyle();
@@ -195,6 +208,11 @@ window.onload = function() {
     Ejercicio1.colorEuro();
 
     Ejercicio2.duplicarCamiseta();
+    Ejercicio2.ocultarStock();
+    Ejercicio2.crearCursor();
+    Ejercicio2.crearEnlace();
+   
+      
 };
 
 
