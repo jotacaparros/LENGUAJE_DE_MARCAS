@@ -1,0 +1,53 @@
+*{
+margin: 0;
+padding: 0;
+font-size: 8;
+font-kerning: none;
+}
+body{
+    background-color: black;
+}
+.container{
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    border: 5px double grey;
+}
+.fila1{
+    background-color: rgb(56, 113, 128);
+}
+.fila2{
+    background-color: rgb(253, 251, 95);
+    padding-left: 7px;
+    padding-block: 5px;
+}
+.fila2 p{
+    background-color: rgb(255, 251, 1);
+    border:rgb(255, 0, 0) solid 2px;
+    width: 160px;
+}
+.fila3{
+    background-color: rgb(8, 190, 214);
+    padding: 7px;
+    height: 25px;
+}
+.fila3 p{
+    background-color: rgb(255, 251, 1);
+    border:rgb(255, 0, 0) solid 2px;
+    width: 160px;
+    float: left;
+    margin-right: 15px;
+}
+.fila4 {
+    background-color: rgb(8, 190, 214);
+    padding: 7px;
+    height: 25px;
+    border: 1px solid black;
+}
+.fila4 p{
+    background-color: rgb(255, 251, 1);
+    border:rgb(255, 0, 0) solid 2px;
+    width: 160px;
+    float: left;
+    margin-right: 15px;
+}
