@@ -1,53 +1,192 @@
 *{
 margin: 0;
 padding: 0;
-font-size: 8;
+font-size:x-small;
 font-kerning: none;
 }
 body{
     background-color: black;
 }
 .container{
-    width: 900px;
-    height: 300px;
+    width: 800px;
+    height: 100%;
     margin: 0 auto;
-    border: 5px double grey;
+    border: 1px double grey;
 }
 .fila1{
-    background-color: rgb(56, 113, 128);
+    background-color: #5E9EA0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
 }
 .fila2{
-    background-color: rgb(253, 251, 95);
+    background-color: #F0E78C;
     padding-left: 7px;
     padding-block: 5px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 .fila2 p{
-    background-color: rgb(255, 251, 1);
-    border:rgb(255, 0, 0) solid 2px;
-    width: 160px;
+    background-color: #FADA01;
+    border:rgb(255, 0, 0) solid 1px;
+    width: 100px;
+    padding-right: 0;
+    margin-right: 0;
 }
 .fila3{
-    background-color: rgb(8, 190, 214);
+    background-color: #ADD9E6;
     padding: 7px;
-    height: 25px;
+    height: 15px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    
 }
 .fila3 p{
-    background-color: rgb(255, 251, 1);
-    border:rgb(255, 0, 0) solid 2px;
-    width: 160px;
+    background-color: #FADA01;
+    border:rgb(255, 0, 0) solid 1px;
+    width: 100px;
     float: left;
     margin-right: 15px;
 }
 .fila4 {
-    background-color: rgb(8, 190, 214);
+    background-color: #ADD9E6;
     padding: 7px;
-    height: 25px;
+    height: 15px;
     border: 1px solid black;
 }
 .fila4 p{
-    background-color: rgb(255, 251, 1);
-    border:rgb(255, 0, 0) solid 2px;
-    width: 160px;
+    background-color: #FADA01;
+    border:rgb(255, 0, 0) solid 1px;
+    width: 70px;
     float: left;
     margin-right: 15px;
+}
+.fila5 {
+    background-color: #ADD9E6;
+    padding: 7px;
+    height: 15px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+.fila5 p{
+    background-color: #FADA01;
+    border:rgb(255, 0, 0) solid 1px;
+    width: 50px;
+    float: left;
+    margin-right: 15px;
+}
+.container2{
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    
+}
+.fila6 {
+background-color: #778899;
+height: 30px;
+border-bottom: 0.5px solid white;
+border-left: 1px solid black;
+border-right: 1px solid black;
+}
+.fila7 {
+    background-color: #e6ea42;
+    padding: 7px;
+    height: 15px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+.fila7 p{
+    background-color: #FADA01;
+    border:rgb(255, 0, 0) solid 1px;
+    width: 90px;
+    float: right;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.fila8 {
+    background-color: #a2faa6;
+    padding: 7px;
+    height: 15px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid white;
+}
+.fila8 p{
+    background-color: #FADA01;
+    border:rgb(255, 0, 0) solid 1px;
+    width: 90px;
+    float: right;
+    margin-right: 10px;
+    padding-right: 0px;
+}
+.fila9 {
+    background-color: #DAB2F1;
+    padding: 7px;
+    height: 15px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid white;
+    
+}
+.fila9 p{
+    background-color: #FADA01;
+    border:rgb(255, 0, 0) solid 1px;
+    width: 90px;
+    float: right;
+    margin-right: 10px;
+    padding-right: 0px;
+}
+.fila10 {
+    background-color: #a2faa6;
+    padding: 7px;
+    height: 15px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+.fila10 p{
+    background-color: #FADA01;
+    border:rgb(255, 0, 0) solid 1px;
+    width: 90px;
+    float: right;
+    margin-right: 10px;
+    padding-right: 0px;
+}
+.fila11 {
+    background-color: #a2faa6;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid white;
+
+}
+.fila11A {
+    background-color: #a2faa6;
+    padding: 7px;
+    height: 15px;
+    border-bottom: 1px solid white;
+}
+.fila11B {
+    background-color: #a2faa6;
+    padding: 7px;
+    height: 15px;
+    border-bottom: 1px solid white;
+}
+.fila11C {
+    background-color: #a2faa6;
+    padding: 7px;
+    height: 15px;
+    border-bottom: 1px solid white;
+}
+.fila11 p{
+    background-color: #FADA01;
+    border:rgb(255, 0, 0) solid 1px;
+    width: 90px;
+    float: right;
+    margin-right: 10px;
+    padding-right: 0px;
 }
