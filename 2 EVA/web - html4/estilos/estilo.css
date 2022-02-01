@@ -1,0 +1,28 @@
+body{
+    background-color: burlywood;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.cabecera{
+    background-color: red;
+    height: 80px;
+}
+.lateral {
+ background-color: crimson;
+ height: 400px;
+ float: left;
+ width: 120px;
+}
+.contenido{
+    background-color: darkcyan;
+    height: 400px;
+    width: 840px;
+    float: left;
+}
+.pie {
+    background-color: orange;
+    height: 80px;
+    clear: both;
+}

@@ -190,3 +190,32 @@ border-right: 1px solid black;
     margin-right: 10px;
     padding-right: 0px;
 }
+.fila14 {
+    background-color: #65CDAA;
+    padding: 7px;
+    height: 15px;
+    border-bottom: 1px solid white;
+   
+}
+.fila14 p {
+    background-color: #FDE4E1;
+    text-align: center;
+    border:#FDE4E1 solid 1px;
+    width: 90px;
+    margin-right: 10px;
+    padding-right: 0px;
+}
+.fila20{
+    background-color: black;
+    padding: 7px;
+    height: 200px;
+    border-bottom: 1px solid white;
+}
+.fila20 p{
+    background-color: #BEB76B;
+    float: left;
+    height: 60px;
+    border: white solid 1px;
+    margin-left: 10px;
+
+}
