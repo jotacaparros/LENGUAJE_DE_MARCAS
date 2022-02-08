@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/static/Raleway-Regular.ttf);
+}
+
+body{
+    width: 800px;
+    margin: 0 auto;
+    background-color:#FBFBFB;
+    font-family:Raleway;  
+}
+main{
+    width: 980;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+    margin: 0 25px;
+    text-transform: uppercase;
+    color: #666666;
+    font-size:1.1em;
+    border-bottom: black, 2px;
+}
+
+header{
+    border-bottom: black, 2px;
+}
+header figure {
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    width: 800px;
+    margin: 0 auto;
+}
