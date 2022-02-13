@@ -1,37 +1,108 @@
 @font-face {
-    font-family: Raleway;
-    src: url(../fonts/static/Raleway-Regular.ttf);
+  font-family: Raleway;
+  src: url(../fonts/static/Raleway-Regular.ttf);
+}
+* {
+  list-style-type: none;
 }
 
-body{
-    width: 800px;
-    margin: 0 auto;
-    background-color:#FBFBFB;
-    font-family:Raleway;  
-}
-main{
-    width: 980;
+body {
+  width: 980px;
+  margin: 0 auto;
+  background-color: #fbfbfb;
+  font-family: Raleway;
 }
 
 nav ul li {
-    list-style-type: none;
-    float: left;
-    margin: 0 25px;
-    text-transform: uppercase;
-    color: #666666;
-    font-size:1.1em;
-    border-bottom: black, 2px;
+  list-style-type: none;
+  float: left;
+  margin: 0 25px;
+  text-transform: uppercase;
+  color: #666666;
+  font-size: 17px;
+}
+.espacioNav {
+  margin-left: 80px;
 }
 
-header{
-    border-bottom: black, 2px;
-}
 header figure {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-ul{
-    width: 800px;
-    margin: 0 auto;
+ul {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.primeraSeccion {
+  margin-top: 44px;
+  border-top: 3px solid black;
+}
+.fotoPortada {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.bannerHorizontal {
+  width: 980px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+.bannerSinMargen {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+figcaption {
+  border: 2px solid #666666;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+footer {
+  margin: 0 auto;
+}
+.catalogoInvierno {
+  margin: 0;
+}
+.links-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 2px solid #666666;
+  border-bottom: 2px solid #666666;
+}
+
+.fBanner {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.centrar {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+.centrarImg {
+  display: flex;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.contacta {
+  list-style-type: none;
+  display: inline-block;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #666666;
+  font-size: 1em;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
