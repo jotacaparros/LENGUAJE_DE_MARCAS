@@ -1,0 +1,69 @@
+body {
+    width: 760px;
+    margin: 0 auto;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-color: rgb(251, 248, 169);
+}
+
+header, figure, img{
+   width: 760px;
+   margin: 0 auto;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 28px;
+}
+section{
+    border-top: green solid 3px;
+    margin-top: 25px;
+}
+h1, h2, h3, h4{
+    color: green;
+    margin-top: 10px;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 10px;
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, p{
+    margin-left: 100px;
+    
+    
+}
+strong{
+    color: red;
+    font-weight: bolder;
+}
+.pnaranja{
+    color: rgb(235, 129, 8);
+}
+
+.pgris{
+    color: rgb(107, 107, 107)
+}
+.pazul{
+    color:aqua;
+    font-size: 21px;
+}
+.pflojo{
+    color: bisque;
+}
+.patencion{
+    background-color: yellow;
+    border: 3px dashed green;
+    padding: 23px;
+    font-size: 18px;
+
+}

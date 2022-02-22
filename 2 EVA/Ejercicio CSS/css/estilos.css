@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    color: black;
+    width: 550px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+h1{
+    color: yellow;
+    font-weight: bolder;
+    font-weight: 10000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: red;
+}
+.titulo{
+    font-size: 100px;
+}
+h2{
+    background-color: yellow;
+}
+.espa{
+    font-size: 40px;
+    text-align: center;
+}
+h3{
+background-color: red;
+}
+.recomendacion{
+    font-size: 50px;
+}
+img{
+
+    size: 10%;
+    vertical-align: bottom;
+}
+body{
+    background-color: #ff5100;
+}
+
+div{
+    margin-top: 8%;
+    float: left;
+    text-align: center;
+    width: 180px;
+}
+.caja1{
+padding-left: 20px; 
+}
+.caja2{
+padding-left: 20px; 
+}
+.caja3{
+padding-left: 20px; 
+}
+.cajafary{
+    text-align: left;
+    padding-left: 25px;
+}

@@ -1,0 +1,56 @@
+
+h1, h3{
+    background-image: url(../img/paloma.jpg);
+    background-repeat: no-repeat;
+    font-size: 1.8em;
+    padding-left: 1.5em;
+    color: rgb(97, 11, 255); 
+}
+
+h2{
+    background-image: url(../img/paloma.jpg);
+    background-repeat: no-repeat;
+    font-size: 1.8em;
+    padding-left: 1.5em;
+    color: rgb(255, 238, 2); 
+    border: solid;
+    border-radius: 15px 15px 15px 20px ;
+    width: 400px;
+}
+
+.cristo img{
+border: 40px solid black; 
+border-image: url('../img/brodedefpaloma2.png') 10 round;   
+}
+
+.gifs {
+    float: left;
+}
+
+body{
+background-color: rgb(127, 225, 255);
+width: 1700px;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    background-color: yellow;
+    border: solid 7px orange;
+    color: chocolate;
+    border-radius: 20px;
+    margin-top: 10px;
+    outline-color: rgb(255, 20, 184);
+    outline-offset: 3px;
+}
+
+fieldset{
+    background-color: rgb(104, 255, 17);
+    border-radius: 20px;
+    width: 400px;
+}
+
+legend{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
