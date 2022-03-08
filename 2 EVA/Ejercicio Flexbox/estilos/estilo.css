@@ -1,0 +1,38 @@
+.flex-container {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ background-color: rgb(255, 222, 36);
+ border: solid 8px rgb(255, 0, 0);
+ justify-content: space-evenly;
+}
+
+.flex-hijo {
+    width: 250px;
+    height: 100px;
+    background-color: aqua;
+    margin: 15px;
+    display: inline-block;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 222, 36);
+    border: solid 8px rgb(255, 0, 0);
+    align-items: stretch;
+    justify-content: center;
+    height: 300px;
+    
+ 
+   }
+   
+   .flex-hijo2 {
+       width: 250px;
+       flex-grow: 1;
+       background-color: aqua;
+       margin: 10px;
+       align-items: flex-end;
+        
+   }
