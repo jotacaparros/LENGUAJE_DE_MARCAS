@@ -1,0 +1,21 @@
+body{
+    width: 940px;
+}
+
+header{
+    margin: 0px auto;
+}
+
+.menuPersonal ul li{
+    list-style-type: none;
+    float: left;
+    margin: 0px;
+    
+   
+   
+}
+
+.menuPersonal{
+    justify-content: flex-end;
+    display: flex;
+}
