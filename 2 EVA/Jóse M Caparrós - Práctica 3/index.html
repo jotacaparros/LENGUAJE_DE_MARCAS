@@ -9,46 +9,200 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.jpg" alt="Logo">
-        
-        <div class="menuPersonal">
-            <ul>
-                <li>Registro</li>
-                <li>Mi Pedido</li>
-                <li>Mi tienda: Sin seleccionar</li>
-                <li>( elegir )</li>
-            </ul>
-        </div>
-
-        <div class="menuCarrito">
-
+        <div class="contenedorFlexPadre">
+            <img  id="logo"  src="img/logo.jpg" alt="Logo">
+            <div class="menus">
+                <div class="menuPersonal">
+                    <ul>
+                        <li>Registro</li>
+                        <li>Mi Pedido</li>
+                        <li>Mi tienda: Sin seleccionar</li>
+                        <li>(<span class="verdePistacho"> elegir </span>)</li>
+                    </ul>
+                </div>
+                <div class="menuCarrito">
+                    <ul>
+                        <li class="menuFlecha"> <img src="img/icono-ayuda.png" alt="icono_ayuda"> </li>
+                        <li>Ayuda compra online <select style="color: rgb(87, 87, 87); background-color: #ffffff; border: none; margin-left: 0px; padding-left: 0px;" name="ayudaDesplegable" id="ayudaDesplegable"></select></li>
+                        <li style="border-left: solid rgb(173, 172, 172) 1px; padding-left: 15px;"> <img src="img/icono-carrito.png" alt="icono_carrito"></li>
+                        <li><span style="color: rgb(71, 71, 71);"> Carrito </span>  <span class="verdePistacho"> 0€</span> (0 productos) <select style="color: rgb(87, 87, 87); background-color: #ffffff; border: none; margin-left: 0px; padding-left: 0px;" name="carrito" id="carritoDesplegable"></select></li>
+                       
+                    </ul>
+                </div>
+            </div>
         </div>
         <nav>
-
+            <ul>
+                <li> <img src="./img/icono-carrito-white.png" alt="carrito" style="margin-right: 15px; margin-top: 0px;"> PRODUCTOS <select  style="color: white; background-color: #83B817; border: none" name="productos" id="productosDesplegable"></select></li>
+                <li>PROMOCIONES</li>
+                <li style="border-left: 1px solid white; padding-left: 20px;">SERVICIOS</li>
+                <li style="border-left: 1px solid white; padding-left: 20px;">IDEAS Y CONSEJOS</li>
+                <li style="border-left: 1px solid white; padding-left: 20px;">TIENDAS</li>
+                <li style="border-left: 1px solid white; padding-left: 20px;">COMUNIDAD</li>
+                <li><input class="inputLupita" type="text" name="Buscar" placeholder="Busqueda"></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <!-- Imagen grande-->
-        <section> 
+        <section class="fotoPrincipal"> 
+            <img src="img/baner-principal.jpg" alt="foto_principal">
         </section>
         
         <!-- Barra verde-->
-        <section>
+        <section class="barraVerde">
+            <div class="iconosBV">
+                <img src="img/ico_mail.png" alt="mail">
+                <img style="margin-left: 10px;" src="img/ico_facebook.png" alt="facebook">
+                <img style="margin-left: 10px;" src="img/ico_twitter.png" alt="twitter">
+            </div>
+            <p class="pBlancoBV">Nuestras ofertas en tu email</p>
+            <p class="pGrisBV">Mantente al día de todas las ofertas y oportunidades de tu tienda habitual</p>
 
         </section>
         <!--Banner imagenes-->
-        <section>
-
+        <section class="bannerImgs">
+            <img src="./img/baner-1.png" alt="banner1">
+            <img src="./img/baner-2.png" alt="banner2">
+            <img src="./img/baner-3.png" alt="banner3">
+            <img src="./img/baner-4.png" alt="banner4">
         </section>
         <!-- Guias -->
-        <section>
+        <section class="guiasImgs">
+            <div class="padreGuia">
+                <div class="hijoGuia">
+                     <img src="./img/guia-1.jpg" alt="guia1"> 
+                </div>
+                <div class="hijoGuia">
+                    <p class="ptitulo">GUÍA DE CALEFACCIÓN </p>
+                    <p>Todo lo que necesitas para elegir chimeneas, estufas y otras soluciones para caldear tu casa.</p>    
+                </div>
+            </div>
 
+            <div class="padreGuia"> 
+                    <div class="hijoGuia">
+                        <img src="./img/guia-2.jpg" alt="guia2"> 
+                    </div>
+                    <div class="hijoGuia">
+                        <p class="ptitulo">GUÍA DE EFICIENCIA</p>
+                        <p>Gana en confort y en ahorro gastando solo la energía que necesitas.</p> 
+                    </div>
+            </div>
+
+            <div class="padreGuia">
+                <div class="hijoGuia">
+                    <img src="./img/guia-3.jpg" alt="guia3">
+                </div> 
+                <div class="hijoGuia">
+                    <p class="ptitulo">GUÍA DE DECORACIÓN</p> 
+                    <p>Tendencias, inspiración y consejos para decorar y transformar tu casa a tu gusto.</p> 
+                </div>
+            </div>
+            
+            <div class="padreGuia"> 
+                <div class="hijoGuia">
+                    <img src="./img/guia-4.jpg" alt="guia4"> 
+                </div>
+                <div class="hijoGuia">
+                    <p class="ptitulo">GUÍA DE ANTIRROBO</p> 
+                    <p>Las soluciones para hacer de tu hogar seguro un lugar seguro para toda tu familia.</p> 
+                </div>
+            </div>
+
+            <div class="padreGuia"> 
+                <div class="hijoGuia">
+                    <img src="./img/guia-5.jpg" alt="guia5"> 
+                </div>
+                <div class="hijoGuia">
+                    <p class="ptitulo">GUÍA DE COCINAS</p> 
+                    <p>Más de 40.000 combinaciones posibles para llevar a cabo tu proyecto de cocina.</p> 
+                </div>
+            </div>
+
+            <div class="padreGuia">
+                <div class="hijoGuia">
+                    <img src="./img/guia-6.jpg" alt="guia6"> 
+                </div>
+                <div class="hijoGuia">
+                    <p class="ptitulo">GUÍA DE MAQUINARIA DE JARDÍN</p> 
+                    <p>Todo lo que necesitas para elegir tu cortacésped, cortabordes y motosierra.</p> 
+                </div>
+            </div>
+
+            <div class="padreGuia">
+                <div class="hijoGuia">
+                    <img src="./img/guia-7.jpg" alt="guia7"> 
+                </div>
+                <div class="hijoGuia">
+                    <p class="ptitulo">GUÍA DE BRICOLAJE</p> 
+                    <p>Aprende a mejorar tu casa por ti mismo.</p>
+                </div>
+            </div>
+
+            <div class="padreGuia">
+                <div class="hijoGuia">
+                    <img src="./img/guia-8.jpg" alt="guia8"> 
+                </div>
+                <div class="hijoGuia">
+                    <p class="ptitulo">GUÍA DE SUELOS LAMINADOS</p> 
+                    <p>Consejos sobre suelo laminado: ventajas, tendencias y criterios para elegir la solución más adecuada.</p> 
+                </div> 
+            </div>
         </section>
     </main>
 
     <footer>
+        <div class="bannerSiguenos">
+            <div class="iconosBA">
+                <div class="iconosBB" style="position: relative">
+                    <img style="position: absolute; top: 15px; left: 509px; z-index: 4; width: 50px;" src="img/comunidad.png" alt="">
+                    <div style="position: absolute; top: 3px; left: 500px; z-index: 3;" class="circuloV"></div>
+                </div>
+                <div class="iconosBB" style="position:relative">
+                    <img style="position: absolute; top: 10px; left: 589px; z-index: 4; width: 50px;" src="img/facebook.png" alt="">
+                    <div style="position: absolute; top: 3px; left: 580px; z-index: 3;"  class="circuloA"></div>
+                </div>
+                <div class="iconosBB" style="position:relative">
+                    <img style="position: absolute; top: 18px; left: 669px; z-index: 4; width: 50px;" src="img/twitter.png" alt="">
+                    <div style="position: absolute; top: 3px; left: 660px; z-index: 3;"  class="circuloAC"></div>
+                </div>
+                <div class="iconosBB" style="position:relative">
+                    <img style="position: absolute; top: 10px; left: 749px; z-index: 4; width: 50px;" src="img/sobre.png" alt="">
+                    <div style="position: absolute; top: 3px; left: 740px; z-index: 3;" class="circuloM"></div>
+                </div>
+                <div class="iconosBB" style="position:relative">
+                    <img style="position: absolute; top: 15px; left: 835px; z-index: 4; width: 40px;" src="img/youtube.png" alt="">
+                    <div style="position: absolute; top: 3px; left: 820px; z-index: 3;" class="circuloR"></div>
+                </div>
+                <div class="iconosBB" style="position:relative">
+                    <img style="position: absolute; top: 10px; left: 909px; z-index: 2; width: 50px" src="img/apple.png" alt="">
+                    <div style="position: absolute; top: 3px; left: 900px; z-index: 1;" class="circuloG"></div>
+                </div>
+            </div>
+            <div>
+                <p class="titularPB">¡Síguenos!</p>
+                <p class="claimPB">En Leroy Merlin siempre estamos compartiendo oportunidades que no querrás perderte</p>
+            </div>
+        </div>
 
+        <div class="footerFinal">
+            <ul class="sobreNosotros">
+                <li style="margin-left: 2px;">Empresa</li>
+                <li>Aviso Legal</li>
+                <li>Contacto y Opinión</li>
+                <li>Empleo</li>
+                <li>Política de Cookies</li>
+                <li>:: Comunicado Seguridad ::</li>
+            </ul>
+            <ul class="redesSocialesFooter">
+                <li>Síguenos en:</li>
+                <li><img src="img/footer_facebook.png" alt="facebook"></li>
+                <li>Facebook</li>
+                <li><img src="img/footer_twitter.png" alt="twitter"></li>
+                <li>Twitter</li>
+            </ul>
+        </div>
     </footer>
 
     
