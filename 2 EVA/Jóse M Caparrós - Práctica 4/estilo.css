@@ -1,0 +1,138 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - GENERAL - - - - - -*/
+body{
+    width: 960px;
+    font-family: 'Open Sans', sans-serif;
+    color:#333333 ;
+    margin:15px
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - HEADER - - - - - -*/
+
+header{
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - HEADER INFO- - - - - -*/
+
+.infoHeader{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+}
+.infoNosotrosHeader ul{
+    padding: 0px;
+    margin: 0px;
+}
+.infoNosotrosHeader ul li{
+    float: left;
+    list-style: none; 
+    margin-left: 4px;
+    font-size: large; 
+    border-left: 1px dotted #333333;
+    padding-left: 4px;
+}
+.infoRegistroHeader ul{
+  padding: 0px;
+  margin: 0px;   
+}
+.infoRegistroHeader ul li {
+    list-style: none;
+    float: left;
+    margin-left: 8px;
+    font-size: small;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - HEADER LOGO - - - - - -*/
+.logoHeader{
+ display: flex;
+ flex-direction: wrap;
+ justify-content: space-between;
+ margin-top: 0px;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - HEADER LOGO FOTOS - - - - - -*/
+.logoFotosHeader{
+    margin-left: 0px;
+    
+}
+.logoFotosHeader ul{
+    padding-left: 0px;
+    margin-top: 0px;
+}
+.logoFotosHeader ul li{
+    list-style: none;
+    float: left;
+    margin-left: 20px; 
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - HEADER LOGO CESTA - - - - - -*/
+.logoCestaHeader{
+    align-self: flex-end;
+    border: #e4e4e4 solid 1px;
+    border-bottom: 0px;
+}
+.logoCestaHeader ul{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 2px;
+}
+.logoCestaHeader ul li {
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+#Cesta{
+    color: #333333;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+#Cesta:hover{
+    color: #009b77;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#CestaImg:hover img{
+    opacity: 0;
+}
+#CestaImg:hover{
+    background: url(img/cart-hover.png);
+    background-repeat: no-repeat;
+}
+#Cesta0:hover{
+    color: #009b77;
+    font-weight: 700;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - HEADER NAV- - - - - -*/
+.navHeader{
+    display: flex;
+    border-top:#e4e4e4 solid 2px;
+    border-bottom: #e4e4e4 solid 2px;
+}
+.navHeader ul{
+    margin-top: 15px;
+    padding-left: 0px;
+}
+.navListaHeader ul li{
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - SECCIONES - - - - - -*/
+.seccion1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: aqua;
+}
+.seccion1 img{
+  width: 960px;
+}
+.seccion2{
+    background-color: rgb(120, 253, 68);
+}
+.seccion3{
+    background-color: rgb(255, 251, 0);
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - -*/
+footer{
+    background-color: red;
+}
