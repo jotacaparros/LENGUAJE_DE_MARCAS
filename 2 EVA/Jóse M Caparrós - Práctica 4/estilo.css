@@ -47,8 +47,7 @@ header{
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - HEADER LOGO FOTOS - - - - - -*/
 .logoFotosHeader{
-    margin-left: 0px;
-    
+    margin-left: 0px;   
 }
 .logoFotosHeader ul{
     padding-left: 0px;
@@ -87,7 +86,6 @@ header{
     font-weight: 700;
     font-size: 1.2em;
 }
-
 #CestaImg:hover img{
     opacity: 0;
 }
@@ -117,22 +115,119 @@ header{
     font-weight: 700;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - SECCIONES - - - - - -*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - SECCIONES - SECCION 1 - - - - -*/
 .seccion1{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    background-color: aqua;
 }
 .seccion1 img{
   width: 960px;
+  margin-bottom: 5px;
 }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - SECCIONES - SECCION 2 - - - - -*/
 .seccion2{
-    background-color: rgb(120, 253, 68);
+    display: flex;
+    flex-direction: column;
 }
+.seccion2Tabla{  
+   width: 960px;
+}
+.seccion2Tabla tr td{
+    border:1px dotted #cacaca;
+}
+.seccion2Tabla tr img{
+   display:block;
+   margin: 0 auto;
+}
+.seccion2 p {
+    margin-top: 0px;
+    flex-wrap: nowrap;
+    align-self: flex-end;
+    color: #009b77;
+    font-weight: 600;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - SECCIONES - SECCION 3 - - - - -*/
 .seccion3{
-    background-color: rgb(255, 251, 0);
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
 }
+.seccion3Fila{
+    display: flex;
+    justify-content: space-around;
+}
+.seccion3FilaContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.seccionImagenSuperpuestas{
+    display: flex;
+    justify-content: center;
+}
+.seccion3Fila .seccion3FilaContainer{
+    border: 1px dotted #cacaca;
+    width: 200px;
+}
+
+.seccion3FilaContainer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.seccion3Fila .seccion3FilaContainer .imagenArriba{
+    position: absolute; 
+    z-index: 1;
+    margin-left: 60px;
+}
+.cajaGrisPrecio{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cacaca;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.precioRosa{
+    color: #d50f3b;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.xxx{
+    color: #009b77;
+    font-weight: 700;
+}
+
+.cajaGrisPrecio .descuentoTachado{
+    text-decoration: line-through;
+    color: #888888;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - -*/
 footer{
-    background-color: red;
+}
+
+footer .muchoTexto {
+    text-indent: 1.5em;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+}
+
+.footerSocial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ececec;
+    border-radius: 10px;
+}
+.siguenos{
+    display: flex;
+    align-items: center;
 }
